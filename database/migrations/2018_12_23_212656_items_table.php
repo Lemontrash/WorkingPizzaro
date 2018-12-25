@@ -13,7 +13,7 @@ class ItemsTable extends Migration
      */
     public function up()
     {
-        Schema::create('items_table', function (Blueprint $table) {
+        Schema::create('items', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('product_id')->unsigned();
             $table->integer('size')->unsigned();
@@ -31,6 +31,6 @@ class ItemsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('items_table');
+        Schema::dropIfExists('items');
     }
 }

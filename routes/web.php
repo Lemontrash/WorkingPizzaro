@@ -15,9 +15,7 @@ Route::get('/', function () {
     return view('pages.index');
 })->name('home');
 
-Route::get('/products', function () {
-    return view('pages.products');
-})->name('products');
+Route::get('/products', "\\".\App\Http\Controllers\ProductsController::class)->name('products');
 
 Route::get('/cart', function () {
     return view('pages.cart');
