@@ -5,10 +5,10 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Products extends Model
+class Product extends Model
 {
     use SoftDeletes;
-    public function item(){
+    public function items(){
         return $this->hasMany(Items::class);
     }
 }

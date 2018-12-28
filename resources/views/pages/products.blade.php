@@ -26,18 +26,19 @@
                                                     <div  class="yith_wapo_groups_container">
                                                         <div  class="ywapo_group_container ywapo_group_container_radio form-row form-row-wide " data-requested="1" data-type="radio" data-id="1" data-condition="">
                                                             <h3><span>Pick Size</span></h3>
-                                                            {{--@foreach($product->items as $item)--}}
-                                                                {{--<div class="ywapo_input_container ywapo_input_container_radio">--}}
+                                                            {{--{{dd($product->items)}}--}}
+                                                            @foreach($product->items as $item)
+                                                                <div class="ywapo_input_container ywapo_input_container_radio">
 
-                                                                    {{--<span class="ywapo_label_tag_position_after"><span class="ywapo_option_label ywapo_label_position_after"></span></span>--}}
-                                                                    {{--<span class="ywapo_label_price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>19</span></span>--}}
-                                                                {{--</div>--}}
+                                                                    <span class="ywapo_label_tag_position_after"><span class="ywapo_option_label ywapo_label_position_after">{{$item->size}} {{$item->dimention}}</span></span>
+                                                                    <span class="ywapo_label_price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">₴</span>{{$item->price}}</span></span>
+                                                                </div>
                                                                 {{--<div class="ywapo_input_container ywapo_input_container_radio">--}}
 
                                                                     {{--<span class="ywapo_label_tag_position_after"><span class="ywapo_option_label ywapo_label_position_after">29 cm</span></span>--}}
                                                                     {{--<span class="ywapo_label_price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>25</span></span>--}}
                                                                 {{--</div>--}}
-                                                            {{--@endforeach--}}
+                                                            @endforeach
                                                         </div>
                                                     </div>
                                                 </a>

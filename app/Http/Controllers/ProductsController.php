@@ -8,6 +8,6 @@ class ProductsController extends Controller
 
     public function __invoke(Request $request)
     {
-        return view('pages.products', ['products' => \App\Products::all()]);
+        return view('pages.products', ['products' => \App\Product::all()]);
     }
 }
