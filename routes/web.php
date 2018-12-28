@@ -25,9 +25,8 @@ Route::get('/blog', function () {
     return view('pages.blog');
 })->name('blog');
 
-Route::get('/single', function () {
-    return view('pages.singleProduct');
-})->name('single');
+Route::get('/product/{id}', 'SingleProductController@show')->name('single');
+//Route::get('/product/{id}', 'SingleProductController@__invoke')->name('single');
 
 Route::get('/locator', function () {
     return view('pages.locator');

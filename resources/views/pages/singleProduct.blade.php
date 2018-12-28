@@ -35,7 +35,11 @@
                                         </p>
                                     </div>
                                     <div itemprop="description">
-                                        <p>Mouth watering pepperoni, cabanossi, mushroom, capsicum, black olives and stretchy mozzarella, seasoned with garlic and oregano.</p>
+                                        {{--<p>@foreach($products as $product)--}}
+                                               {{--{{$product->description}}--}}
+                                           {{--@endforeach</p>--}}
+                                        {{dd($products)}}
+                                        <p>{{$products['0']['description']}}</p>
                                     </div>
                                     <!-- AddToAny BEGIN -->
                                     <div class="social-share-btn a2a_kit a2a_kit_size_32 a2a_default_style">
