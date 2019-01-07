@@ -35,11 +35,8 @@
                                         </p>
                                     </div>
                                     <div itemprop="description">
-                                        {{--<p>@foreach($products as $product)--}}
-                                               {{--{{$product->description}}--}}
-                                           {{--@endforeach</p>--}}
-                                        {{dd($products)}}
-                                        <p>{{$products['0']['description']}}</p>
+                                        <p>{{$products->name}}</p>
+                                        <p>{{$products->description}}</p>
                                     </div>
                                     <!-- AddToAny BEGIN -->
                                     <div class="social-share-btn a2a_kit a2a_kit_size_32 a2a_default_style">

@@ -26,7 +26,7 @@ Route::get('/blog', function () {
 })->name('blog');
 
 Route::get('/product/{id}', 'SingleProductController@show')->name('single');
-//Route::get('/product/{id}', 'SingleProductController@__invoke')->name('single');
+
 
 Route::get('/locator', function () {
     return view('pages.locator');
